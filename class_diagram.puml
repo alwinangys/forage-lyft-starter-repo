@@ -1,0 +1,37 @@
+@startuml
+
+class Car
+
+class Capulet_Engine
+class Willoughby_Engine 
+class Stemman_Engine
+
+class Calliope
+class Glissade
+class Palindrome
+class Rorschach
+class Thovex
+
+class Splinder_Battery
+class Nubbin_Battery
+
+
+Car -- Capulet_Engine
+Car -- Willoughby_Engine
+Car -- Stemman_Engine
+
+
+Capulet_Engine --* Calliope
+Capulet_Engine --* Thovex
+Willoughby_Engine --* Glissade
+Willoughby_Engine --* Rorschach
+Stemman_Engine --* Palindrome
+
+
+Calliope *-- Splinder_Battery
+Glissade *-- Splinder_Battery
+Palindrome *-- Splinder_Battery
+Rorschach *-- Nubbin_Battery
+Thovex *-- Nubbin_Battery
+
+@enduml
